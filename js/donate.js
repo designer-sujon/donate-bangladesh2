@@ -41,6 +41,7 @@ document.getElementById('donate-btn.noakhali')
 
    const modal = document.getElementById('my_modal_1');
    modal.showModal()
+   document.getElementById('input-noakhali').value= '';
     
 });
 
@@ -75,6 +76,8 @@ document.getElementById('donate-btn-feni')
 
    const modal = document.getElementById('my_modal_1');
    modal.showModal()
+
+   document.getElementById('input-feni').value= '';
     
 })
 
@@ -107,6 +110,7 @@ document.getElementById('donate-btn-quota')
    document.getElementById('transaction-container').appendChild(div)
    const modal = document.getElementById('my_modal_1');
    modal.showModal()
+   document.getElementById('input-quota').value= '';
     
 })
 
