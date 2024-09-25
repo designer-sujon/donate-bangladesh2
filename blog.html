@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-them="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+     <!-- Google Font CDN -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+     <!-- TailWind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+         tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary': '#F9F7F3',
+                'btn-color': '#B4F461',
+                'text-color': '#111111',
+                'tk-btn': '#f3f3f3',
+              },
+              fontFamily : {
+                lexend : ['Lexend', 'sans-serif'],
+              },
+            }
+          }
+        }
+    </script>
+   
+</head>
+<body class="font-lexend">
+  <header class="sticky top-0 left-0 right-0">
+    <!-- Navbar Start -->
+    <nav class="bg-primary py-6 backdrop-filter">
+       <div class="flex items-center justify-between w-10/12 mx-auto mb-4">
+        <button class="bg-btn-color px-6 py-2 rounded-lg text-black font-bold"><a href="index.html">Home</a></button>
+        <div class="flex items-center gap-4 cursor-pointer">
+            <img class="w-8 h-full" src="assets/logo.png" alt="Donate Bangladesh">
+            <p class="hidden lg:flex font-medium lg:font-bold lg:text-xl">Donate Bangladesh</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <img src="assets/coin.png" alt="">
+            <p class="lg:font-bold text-gray-500 lg:text-xl">
+                <span id="main-Balance" class="font-medium">10500</span>
+                <span>BDT</span>
+            </p>
+        </div>
+       </div>
+    </nav>
+</header>
+    <main class="w-10/12 mx-auto py-10">
+       <div class="mb-10"><h1 class="text-3xl font-bold">Important FAQ</h1></div>
+       <!-- Accordion Start -->
+        <section>
+          <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p class="text-lg font-medium text-gray-500 w-3/4">The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of the document as a tree of objects, allowing you to manipulate its content and visual presentation. Each object represents a part of the document, such as an element or attribute. </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+              <div class="collapse-content">
+                <p class="text-lg font-medium text-gray-500 w-3/4">JavaScript provides several methods to select DOM elements. Here are some of them:
+                Using getElementById, Using getElementsByClassName, Using getElementsByTagName, Using querySelector, Using querySelectorAll</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it Useful</div>
+              <div class="collapse-content">
+                <p class="text-lg font-medium text-gray-500 w-3/4">Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the DOM</div>
+              <div class="collapse-content">
+                <p class="text-lg font-medium text-gray-500 w-3/4">Once you have selected DOM elements, you can manipulate them using various JavaScript methods and properties. Here are some examples:
+                  <br>
+                  Changing the Text Content:
+                  <br>
+                  The textContent property allows you to get or set the text content of a DOM element.
+                <br>
+                Changing the HTML Content:
+                The innerHTML property allows you to get or set the HTML content of a DOM element.
+              <br>
+              Changing the Attribute Value:
+              <br>
+              The setAttribute method allows you to set the value of an attribute on the specified element.
+            <br>
+            Adding and Removing Classes:
+            <br>
+            The classList property provides methods to add, remove, and toggle CSS classes on a DOM element.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="config.tailwind.js"></script>
+</body>
+</html>
