@@ -10,7 +10,7 @@ const feniDonateAmount = getDonateAmount ('input-feni')
 const quotaDonateAmount = getDonateAmount ('input-quota')
 
 
-
+// Noakhali Flood Donation
 document.getElementById('donate-btn.noakhali')
 .addEventListener('click', function(event){
     event.preventDefault()
@@ -34,18 +34,18 @@ document.getElementById('donate-btn.noakhali')
    div.classList.add('border','rounded-xl','px-6','py-6','mt-6', 'space-y-2');
    const currentTime = new Date()
    div.innerHTML= `
-   <h1 class="text-3xl font-bold"> ${noakhaliDonateAmount.toFixed(2)} Taka is Donated for Flood at Noakhali, Bangladesh</h1>
+   <h1 class="text-2xl lg:text-3xl font-medium lg:font-bold"> ${noakhaliDonateAmount.toFixed(2)} Taka is Donated for Flood at Noakhali, Bangladesh</h1>
    <p class="text-xl font-medium"> Date: ${currentTime}</p>
    `
    document.getElementById('transaction-container').appendChild(div)
 
-   const modal = document.getElementById('my_modal_5');
-   modal.showModal();
-
-
-   
+   const modal = document.getElementById('my_modal_1');
+   modal.showModal()
+    
 });
 
+
+// Feni Flood Donation
 document.getElementById('donate-btn-feni')
 .addEventListener('click', function(){
     const mainBalance = openingBalance ('main-Balance');
@@ -68,14 +68,17 @@ document.getElementById('donate-btn-feni')
    div.classList.add('border','rounded-xl','px-6','py-6','mt-6', 'space-y-2');
    const currentTime = new Date()
    div.innerHTML= `
-   <h1 class="text-3xl font-bold"> ${feniDonateAmount.toFixed(2)} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+   <h1 class="text-2xl lg:text-3xl font-medium lg:font-bold"> ${feniDonateAmount.toFixed(2)} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
    <p class="text-xl font-medium"> Date: ${currentTime}</p>
    `
    document.getElementById('transaction-container').appendChild(div)
+
+   const modal = document.getElementById('my_modal_1');
+   modal.showModal()
     
 })
 
-
+// Quota Movement Donation
 document.getElementById('donate-btn-quota')
 .addEventListener('click', function(){
     const mainBalance = openingBalance ('main-Balance');
@@ -98,10 +101,12 @@ document.getElementById('donate-btn-quota')
    div.classList.add('border','rounded-xl','px-6','py-6','mt-6', 'space-y-2');
    const currentTime = new Date()
    div.innerHTML= `
-   <h1 class="text-3xl font-bold"> ${quotaDonateAmount.toFixed(2)} Taka is Aid for Injured in the Quota Movement</h1>
+   <h1 class="text-2xl lg:text-3xl font-medium lg:font-bold"> ${quotaDonateAmount.toFixed(2)} Taka is Aid for Injured in the Quota Movement</h1>
    <p class="text-xl font-medium"> Date: ${currentTime}</p>
    `
    document.getElementById('transaction-container').appendChild(div)
+   const modal = document.getElementById('my_modal_1');
+   modal.showModal()
     
 })
 
